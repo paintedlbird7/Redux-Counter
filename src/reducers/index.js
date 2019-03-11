@@ -12,15 +12,19 @@ const initialState = {
 export default (state = initialState, action) => {
   switch (action.type) {
     case INCREMENT:
+    // return ++state
     // Fill in the body of this case
-    return {...state, ...action}
-      // return state + 1;
+    // return {...state, ...action}
+      return state + 1;
     case DECREMENT:
+    // return --state
+
     // Fill in the body of this case
-    return {...state, ...action}
-    // return state - 1;
+    // return {...state, ...action}
+    return state - 1;
     default:
       return state;
   }
 }
   
+// export default connect(mapStateToProps, { increment, decrement })(Counter);

@@ -24,5 +24,6 @@ export const decrement = () => {
   return {
     type: 'DECREMENT',
     // count: num
+    
   }
 };
